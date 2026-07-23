@@ -1,0 +1,15 @@
+{
+  "name": "hoot-monorepo",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n backend,frontend -c magenta,cyan \"cargo run -p hoot-server\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build && cargo build --release -p hoot-server",
+    "start": "cargo run --release -p hoot-server --",
+    "test": "cargo test --workspace && npm --prefix frontend test -- --run",
+    "check": "cargo fmt --all -- --check && cargo clippy --workspace --all-targets -- -D warnings && npm --prefix frontend run check"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
+

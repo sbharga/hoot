@@ -1,0 +1,89 @@
+{
+  "games": [
+    {
+      "id": "welcome-to-hoot",
+      "title": "Welcome to Hoot!",
+      "description": "A quick mix of trivia to learn the game.",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "id": "largest-ocean",
+          "prompt": "Which is the largest ocean on Earth?",
+          "timeLimitSeconds": 15,
+          "readingTimeSeconds": 5,
+          "options": [
+            { "id": "atlantic", "text": "Atlantic Ocean" },
+            { "id": "pacific", "text": "Pacific Ocean" },
+            { "id": "indian", "text": "Indian Ocean" },
+            { "id": "arctic", "text": "Arctic Ocean" }
+          ],
+          "correctOptionId": "pacific"
+        },
+        {
+          "type": "free_text",
+          "id": "red-planet",
+          "prompt": "Which planet is known as the Red Planet?",
+          "timeLimitSeconds": 20,
+          "readingTimeSeconds": 5,
+          "acceptedAnswers": ["Mars"]
+        },
+        {
+          "type": "multiple_choice",
+          "id": "owl-group",
+          "prompt": "What is a group of owls traditionally called?",
+          "timeLimitSeconds": 20,
+          "readingTimeSeconds": 6,
+          "doublePoints": true,
+          "options": [
+            { "id": "parliament", "text": "A parliament" },
+            { "id": "murder", "text": "A murder" },
+            { "id": "crash", "text": "A crash" },
+            { "id": "business", "text": "A business" }
+          ],
+          "correctOptionId": "parliament"
+        }
+      ]
+    },
+    {
+      "id": "tiny-science",
+      "title": "Tiny Science",
+      "description": "Three bite-size science questions.",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "id": "water-formula",
+          "prompt": "What is the chemical formula for water?",
+          "timeLimitSeconds": 12,
+          "options": [
+            { "id": "co2", "text": "CO₂" },
+            { "id": "h2o", "text": "H₂O" },
+            { "id": "o2", "text": "O₂" }
+          ],
+          "correctOptionId": "h2o"
+        },
+        {
+          "type": "free_text",
+          "id": "nearest-star",
+          "prompt": "What is the nearest star to Earth?",
+          "timeLimitSeconds": 18,
+          "acceptedAnswers": ["The Sun", "Sun"]
+        },
+        {
+          "type": "multiple_choice",
+          "id": "bones",
+          "prompt": "How many bones are in a typical adult human body?",
+          "timeLimitSeconds": 15,
+          "doublePoints": true,
+          "options": [
+            { "id": "106", "text": "106" },
+            { "id": "206", "text": "206" },
+            { "id": "306", "text": "306" },
+            { "id": "406", "text": "406" }
+          ],
+          "correctOptionId": "206"
+        }
+      ]
+    }
+  ]
+}
+

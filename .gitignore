@@ -1,0 +1,22 @@
+/target/
+/node_modules/
+/frontend/node_modules/
+/frontend/dist/
+
+# env / secrets
+.env
+.env.local
+.env.*.local
+
+# editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# logs
+*.log
+npm-debug.log*
+
+# test/coverage output
+coverage/
